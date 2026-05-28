@@ -11,22 +11,35 @@
     <style>
             body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-        }
-            <!-- Sección de contacto -->
-        <section class="contact" id="contacto">  
-        <h2>Contáctanos</h2>
-        <p>📱 WhatsApp: <a href="https://wa.me/523312504151" target="_blank">+52 33 1250 4151</a></p>
-        <a href="mailto:mazaventura@icloud.com">Enviar un Email</a>
-        </section>
+            }
+        /* Sección de contacto */
+      .contact {
+    background-color: #273c75;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
 
-            <!-- Footer -->
-        <footer>
-        <p>&copy; 2026 Mazamitla Aventura. Todos los derechos reservados. | Sitio desarrollado para aventuras y turismo</p>
-        </footer>
+.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
 
-        <script>
-            function contactarWhatsApp() {
-        window.open("https://wa.me/523312504151", "_blank");
+.contact a {
+    display: inline-block;
+    background-color: #e84118;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: background 0.3s ease;
+}
+
+.contact a:hover {
+    background-color: #c23616;
+}
+
         }
         
         /* Fondo de naturaleza fijo (Parallax estático) */
@@ -395,7 +408,6 @@
                 triggerAIScout(routeId);
             }, 100);
         }
-
         // ==========================================
         // VISTA: CATÁLOGO COMPLETO DE 8 RUTAS + AI SCOUT
         // ==========================================
@@ -949,6 +961,22 @@
                 triggerQuickScarcity();
             }, 4000);
         };
+<!-- Sección de contacto -->
+<section class="contact" id="contacto">
+    <h2>Contáctanos</h2>
+    <p>📱 WhatsApp: <a href="https://wa.me/523312504151" target="_blank">+52 33 1250 4151</a></p>
+    <a href="mailto:mazaventura@icloud.com">Enviar un Email</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2026 Mazamitla Aventura. Todos los derechos reservados. | Sitio desarrollado para aventuras y turismo</p>
+</footer>
+
+<script>
+function contactarWhatsApp() {
+    window.open("https://wa.me/523312504151", "_blank");
+}
     </script>
 </body>
 </html>
